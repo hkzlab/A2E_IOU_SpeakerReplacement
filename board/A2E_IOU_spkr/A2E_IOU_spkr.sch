@@ -116,17 +116,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 3150 4950 3150
 $Comp
-L Logic_Programmable:GAL16V8 U1
-U 1 1 5F92C8C7
-P 7200 2150
-F 0 "U1" H 6950 2800 50  0000 C CNN
-F 1 "GAL16V8" H 7450 2800 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 7200 2150 50  0001 C CNN
-F 3 "" H 7200 2150 50  0001 C CNN
-	1    7200 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5F92D5F3
 P 4100 1250
@@ -432,19 +421,7 @@ F 3 "" H 7200 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7200 1350 7200 1450
-Wire Wire Line
-	6700 1650 6150 1650
-Wire Wire Line
-	6700 1750 6150 1750
-Wire Wire Line
-	6700 1850 6150 1850
-Wire Wire Line
-	6700 1950 6150 1950
-Wire Wire Line
-	6700 2050 6150 2050
-Wire Wire Line
-	6700 2150 6150 2150
-Text Label 6150 1650 0    50   ~ 0
+Text Label 6150 2250 0    50   ~ 0
 PHI0
 Text Label 6150 1750 0    50   ~ 0
 ~C0XX
@@ -457,26 +434,12 @@ ORA5
 Text Label 6150 2150 0    50   ~ 0
 ORA4
 Wire Wire Line
-	6700 2250 6550 2250
-Wire Wire Line
-	6550 2250 6550 2350
-Wire Wire Line
 	6550 2900 7200 2900
 Connection ~ 7200 2900
 Wire Wire Line
 	7200 2900 7200 2950
 Wire Wire Line
-	6700 2350 6550 2350
-Connection ~ 6550 2350
-Wire Wire Line
-	6550 2350 6550 2450
-Wire Wire Line
-	6700 2450 6550 2450
-Connection ~ 6550 2450
-Wire Wire Line
 	6550 2450 6550 2550
-Wire Wire Line
-	6700 2550 6550 2550
 Connection ~ 6550 2550
 Wire Wire Line
 	6550 2550 6550 2900
@@ -547,4 +510,46 @@ Wire Wire Line
 	9400 1650 9050 1650
 Text Label 9050 1650 0    50   ~ 0
 N_SPKR
+Connection ~ 6550 2450
+Wire Wire Line
+	6700 2550 6550 2550
+Wire Wire Line
+	6700 2450 6550 2450
+Wire Wire Line
+	6700 2150 6150 2150
+Wire Wire Line
+	6700 2050 6150 2050
+Wire Wire Line
+	6700 1950 6150 1950
+Wire Wire Line
+	6700 1850 6150 1850
+Wire Wire Line
+	6700 1750 6150 1750
+Wire Wire Line
+	6700 2250 6150 2250
+Wire Wire Line
+	6550 2350 6550 2450
+Wire Wire Line
+	6700 2350 6550 2350
+$Comp
+L Logic_Programmable:GAL16V8 U1
+U 1 1 5F92C8C7
+P 7200 2150
+F 0 "U1" H 6950 2800 50  0000 C CNN
+F 1 "GAL16V8" H 7450 2800 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 7200 2150 50  0001 C CNN
+F 3 "" H 7200 2150 50  0001 C CNN
+	1    7200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2350 8050 2350
+Wire Wire Line
+	8050 2350 8050 3300
+Wire Wire Line
+	8050 3300 5950 3300
+Wire Wire Line
+	5950 3300 5950 1650
+Wire Wire Line
+	5950 1650 6700 1650
 $EndSCHEMATC
