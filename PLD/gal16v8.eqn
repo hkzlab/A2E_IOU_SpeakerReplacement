@@ -1,15 +1,18 @@
 chip IOU_SPKR GAL16V8
 
-CLK=1 C0XX=2 ORA7=3 ORA6=4 ORA5=5 ORA4=6 PHI=7 GND=10 
-o12=12 rf18=18 o19=19 VCC=20 
+CLK=1 PHI0=2 PRAS=3 A6=4 Q3=5 LA7=6 LA4=7 LA5=8 C0XX=9 GND=10 
+o12=12 o17=17 rf18=18 o19=19 VCC=20 
 
 equations
 
-o12 = PHI * /C0XX * /ORA7 * /ORA6 * ORA4 * ORA5
-o12.oe = VCC
+/o17 = VCC
+o17.oe = /rf18
 
 rf18 := /rf18
 rf18.oe = VCC
 
-/o19 = VCC 
-o19.oe = /rf18
+o12 = /C0XX * /Q3 * /LA7 * /A6 * LA4 * LA5
+o12.oe = VCC
+
+o19 = PHI0 * PRAS
+o19.oe = VCC
