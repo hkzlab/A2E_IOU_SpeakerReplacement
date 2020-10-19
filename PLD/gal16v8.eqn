@@ -5,7 +5,7 @@ o12=12 rf18=18 o19=19 VCC=20
 
 equations
 
-o12 = PHI * /C0XX * /ORA7 * ORA4 * ORA5
+o12 = PHI * /C0XX * /ORA7 * /ORA6 * ORA4 * ORA5
 o12.oe = VCC
 
 rf18 := /rf18
