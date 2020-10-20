@@ -28,7 +28,7 @@ U1 provides the following functions: It implements the latch signal that gets fe
 - 1x 40-pin wide socket
 - 1x 74LS373 (U2)
 - 1x GAL16V8 (U1)
-- 2x 100nF ceramic capacitors
+- 2x 100nF ceramic capacitors (mount these on the __underside__ of the board)
 
 With the top of the board facing you, the male headers must be installed in the 1st and 3rd column, with the pins facing the underside of the board, so they can be inserted into a socket in the mainboard.
 
