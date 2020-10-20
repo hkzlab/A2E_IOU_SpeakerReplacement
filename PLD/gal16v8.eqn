@@ -11,8 +11,8 @@ o17.oe = /rf18
 rf18 := /rf18
 rf18.oe = VCC
 
-o12 = /C0XX * /Q3 * /LA7 * /A6 * LA4 * LA5
+o12 = /C0XX * /LA7 * /A6 * LA4 * LA5
 o12.oe = VCC
 
-o19 = PHI0 * PRAS
+o19 = PHI0 * PRAS * Q3
 o19.oe = VCC
